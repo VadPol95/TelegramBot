@@ -1,7 +1,8 @@
 package com.vadpol.Methods;
 
 
-import HillelProject.ConnectionSQL.ConnectToSQL;
+
+import com.vadpol.ConnectionSQL.ConnectToSQL;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

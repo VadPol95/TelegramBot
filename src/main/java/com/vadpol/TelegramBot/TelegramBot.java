@@ -1,7 +1,7 @@
 package com.vadpol.TelegramBot;
 
-import HillelProject.ConnectionSQL.ConnectToSQL;
-import HillelProject.Methods.*;
+import com.vadpol.ConnectionSQL.ConnectToSQL;
+import com.vadpol.Methods.*;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.ParseMode;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;

@@ -4,7 +4,7 @@ package com.vadpol.TelegramBot;
 // Класс Main, этот класс активирует телеграмБот, этот же класс запускается в Heroku.
 
 
-import HillelProject.Methods.WaterReminderMethod;
+import com.vadpol.Methods.WaterReminderMethod;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
