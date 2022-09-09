@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 /*
  Класс который содениняет ТелеграмБот с Базой Данных.
 */
-public class ProductCaloriesMethod {
+public class CalculateProductCalories {
     private static Product products;
     // Создает объект класса Products
     public static void products() {

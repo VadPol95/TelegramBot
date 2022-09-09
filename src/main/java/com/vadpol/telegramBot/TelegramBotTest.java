@@ -4,9 +4,7 @@ import com.vadpol.connectionToSql.ConnectToSQL;
 import com.vadpol.dao.IndividualDataDAO;
 import com.vadpol.dao.WaterDAO;
 import com.vadpol.recipe.SpecialOfTheDayRecipe;
-import com.vadpol.service.impl.DatabaseServiceImpl;
-import com.vadpol.service.impl.WaterServiceImpl;
-import com.vadpol.util.ProductCaloriesMethod;
+import com.vadpol.util.CalculateProductCalories;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.ParseMode;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -36,7 +34,7 @@ public class TelegramBotTest extends TelegramLongPollingBot {
 
     public TelegramBotTest() {
         ConnectToSQL.mainJava();
-        ProductCaloriesMethod.products();
+        CalculateProductCalories.products();
     }
 
     HashMap<String, String> hashForProducts = new HashMap<>();
@@ -98,7 +96,7 @@ public class TelegramBotTest extends TelegramLongPollingBot {
                 } else {
                     message.getChatId();
                     String messages = update.getMessage().getText();
-                    String response = ProductCaloriesMethod.process(messages);
+                    String response = CalculateProductCalories.process(messages);
                     inlineButton2(message, response);
                 }
             }

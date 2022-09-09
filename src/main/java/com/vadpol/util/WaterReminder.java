@@ -14,7 +14,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 
-public class WaterReminderMethod implements Job {
+public class WaterReminder implements Job {
     TelegramBotTest telegramBot = new TelegramBotTest();
 
 
