@@ -66,10 +66,16 @@ public class IndividualDataDAO {
                Норма калорий = BMR x Уровень активности
              */
             if (Double.parseDouble(resultSetSex.getString(1)) == (88.36)) {
-                result = Double.parseDouble(resultSetActivity.getString(1)) * ((Double.parseDouble(resultSetSex.getString(1)) + (manWeight * Double.parseDouble(resultSetWeight.getString(1))) + (manHeight * Double.parseDouble(resultSetHeight.getString(1)))
+                result = Double.parseDouble(resultSetActivity.getString(1))
+                        * ((Double.parseDouble(resultSetSex.getString(1))
+                        + (manWeight * Double.parseDouble(resultSetWeight.getString(1)))
+                        + (manHeight * Double.parseDouble(resultSetHeight.getString(1)))
                         - (manYear * Double.parseDouble(resultSetAge.getString(1)))));
             } else if (Double.parseDouble(resultSetSex.getString(1)) == (447.6)) {
-                result = Double.parseDouble(resultSetActivity.getString(1)) * ((Double.parseDouble(resultSetSex.getString(1)) + (womanWeight * Double.parseDouble(resultSetWeight.getString(1))) + (womanHeight * Double.parseDouble(resultSetHeight.getString(1)))
+                result = Double.parseDouble(resultSetActivity.getString(1))
+                        * ((Double.parseDouble(resultSetSex.getString(1))
+                        + (womanWeight * Double.parseDouble(resultSetWeight.getString(1)))
+                        + (womanHeight * Double.parseDouble(resultSetHeight.getString(1)))
                         - (womanYear * Double.parseDouble(resultSetAge.getString(1)))));
 
             }
@@ -115,12 +121,13 @@ public class IndividualDataDAO {
             throw new RuntimeException(e);
         }
     }
+
     public static void insertIndividualDataToSql(String chatId, String number, String value) {
 
         try {
 
             // комманда для SQL которая выводит базу данных
-            String sqlWorker = ("insert into d1cfnt21boubau.products.\"individualCalories\" (\"chatId\", number, information)values ("+chatId+","+number+","+value+")");
+            String sqlWorker = ("insert into d1cfnt21boubau.products.\"individualCalories\" (\"chatId\", number, information)values (" + chatId + "," + number + "," + value + ")");
 
 
             // Создаем подключение к базе данных
@@ -133,12 +140,13 @@ public class IndividualDataDAO {
             throw new RuntimeException(e);
         }
     }
+
     public static void insertChatIdInWaterReminderSQL(String chatId) {
 
         try {
 
             // комманда для SQL которая выводит базу данных
-            String sqlWorker = ("insert into d1cfnt21boubau.products.\"waterReminder\" (\"ChatId\") values ("+chatId+")");
+            String sqlWorker = ("insert into d1cfnt21boubau.products.\"waterReminder\" (\"ChatId\") values (" + chatId + ")");
 
 
             // Создаем подключение к базе данных
@@ -164,12 +172,13 @@ public class IndividualDataDAO {
             throw new RuntimeException(e);
         }
     }
+
     public static void insertWaterBalanceToSql(String chatId, String number, String value) {
 
         try {
 
             // комманда для SQL которая выводит базу данных
-            String sqlWorker = ("insert into d1cfnt21boubau.products.\"waterBalance\" (\"chatId\", number, weight)values ("+chatId+","+number+","+value+")");
+            String sqlWorker = ("insert into d1cfnt21boubau.products.\"waterBalance\" (\"chatId\", number, weight)values (" + chatId + "," + number + "," + value + ")");
 
 
             // Создаем подключение к базе данных

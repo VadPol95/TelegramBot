@@ -4,7 +4,7 @@ package com.vadpol;
 // Класс Main, этот класс активирует телеграмБот, этот же класс запускается в Heroku.
 
 
-import com.vadpol.telegramBot.TelegramBotTest;
+import com.vadpol.telegramBot.TelegramBot;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
@@ -19,7 +19,7 @@ public class RunTelegramBot {
 
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
         try {
-            TelegramBotTest bot = new TelegramBotTest();
+            TelegramBot bot = new TelegramBot();
             telegramBotsApi.registerBot(bot);
 
 

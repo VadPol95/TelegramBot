@@ -24,7 +24,7 @@ import java.util.regex.Pattern;
 
 
 // Класс ТелеграмБота, методы для получение и отправки сообщений.
-public class TelegramBotTest extends TelegramLongPollingBot {
+public class TelegramBot extends TelegramLongPollingBot {
 
     private IndividualDataDAO databaseService;
     private WaterDAO waterService;
@@ -32,7 +32,7 @@ public class TelegramBotTest extends TelegramLongPollingBot {
 //    private WaterServiceImpl waterService;
 
 
-    public TelegramBotTest() {
+    public TelegramBot() {
         ConnectToSQL.mainJava();
         CalculateProductCalories.products();
     }

@@ -2,7 +2,7 @@ package com.vadpol.util;
 
 
 import com.vadpol.connectionToSql.ConnectToSQL;
-import com.vadpol.telegramBot.TelegramBotTest;
+import com.vadpol.telegramBot.TelegramBot;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
@@ -15,7 +15,7 @@ import java.sql.Statement;
 
 
 public class WaterReminder implements Job {
-    TelegramBotTest telegramBot = new TelegramBotTest();
+    TelegramBot telegramBot = new TelegramBot();
 
 
     // метод отправляет напоминание выпить воду
