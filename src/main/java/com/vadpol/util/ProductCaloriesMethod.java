@@ -1,6 +1,7 @@
-package com.vadpol.Methods;
+package com.vadpol.util;
 
 import com.vadpol.ConnectionSQL.ConnectToSQL;
+import com.vadpol.model.Product;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,11 +14,11 @@ import java.util.stream.Collectors;
 */
 public class ProductCaloriesMethod {
     private static ConnectToSQL mainJava;
-    private static ProductsClass products;
+    private static Product products;
     public static String result;
     // Создает объект класса Products
     public static void products() {
-        products = new ProductsClass();
+        products = new Product();
     }
     static List<String> productes = new ArrayList<>();
     /**
@@ -26,7 +27,7 @@ public class ProductCaloriesMethod {
      * и выводит его. В случае если продукта нет, выводит что такого продукта нет.
      **/
     public static String process(String message) {
-        List<ProductsClass> product = new ArrayList<>();
+        List<Product> product = new ArrayList<>();
         String result = "Такого продукта нет";
         try {
 

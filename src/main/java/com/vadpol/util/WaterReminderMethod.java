@@ -1,8 +1,8 @@
-package com.vadpol.Methods;
+package com.vadpol.util;
 
 
 import com.vadpol.ConnectionSQL.ConnectToSQL;
-import com.vadpol.TelegramBot.TelegramBot;
+import com.vadpol.telegramBot.TelegramBot;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;

@@ -1,10 +1,10 @@
-package com.vadpol.Methods;
+package com.vadpol.recipe;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class SpecialOfTheDayMethod {
+public class SpecialOfTheDayRecipe {
     static Random random = new Random();
 
     public static String processBreakFast(String message) {
@@ -15,7 +15,7 @@ public class SpecialOfTheDayMethod {
 
         specialOfTheDayBreakfast.add("""
 
-                Тыквенный тарт. Одна порция
+                Тыквенный торт. Одна порция
 
                 КБЖУ 344/20,6/9,91/42,98
 
