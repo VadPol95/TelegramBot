@@ -5,11 +5,11 @@ import com.vadpol.service.DatabaseService;
 
 public class DatabaseServiceImpl implements DatabaseService {
 
-    private final IndividualDataDAO dataDAO;
+//    private static final IndividualDataDAO dataDAO = new IndividualDataDAO();
 
-    public DatabaseServiceImpl(IndividualDataDAO dataDAO) {
-        this.dataDAO = dataDAO;
-    }
+//    public DatabaseServiceImpl(IndividualDataDAO dataDAO) {
+//        this.dataDAO = dataDAO;
+//    }
 
     @Override
     public void insertWaterBalanceToSql(String chatId, String number, String value) {

@@ -8,15 +8,6 @@ import java.sql.Statement;
 
 public class WaterDAO {
 
-
-    private static ConnectToSQL mainJava;
-    public WaterDAO(ConnectToSQL mainJava) {
-        WaterDAO.mainJava = mainJava;
-    }
-
-    public WaterDAO() {
-    }
-
     // Расчет индивидуальных калорий взятых из базы данных
     public static String individualWaterBalance(String chatId) {
 
@@ -30,7 +21,7 @@ public class WaterDAO {
             String weight = ("select weight from d1cfnt21boubau.products.\"waterBalance\" where \"chatId\"=" + chatId + " and number=2");
 
             // Создаем подключение к базе данных
-            Statement statementWeight = mainJava.connection.createStatement();
+            Statement statementWeight = ConnectToSQL.connection.createStatement();
 
             // Выполняем команду Select для SQL
             ResultSet resultSetWeight = statementWeight.executeQuery(weight);
@@ -56,7 +47,7 @@ public class WaterDAO {
             boolean result = false;
             String numbers = ("select weight from d1cfnt21boubau.products.\"waterBalance\" where \"chatId\"=" + chatId);
 
-            Statement statement = mainJava.connection.createStatement();
+            Statement statement = ConnectToSQL.connection.createStatement();
             ResultSet resultSetWeight = statement.executeQuery(numbers);
             while (resultSetWeight.next()) {
                 if (resultSetWeight.getString(1).equals(number)) {
@@ -77,7 +68,7 @@ public class WaterDAO {
         try {
 
             String deleteInfo = ("delete from d1cfnt21boubau.products.\"waterBalance\" where \"chatId\"=" + chatId);
-            Statement statement = mainJava.connection.createStatement();
+            Statement statement = ConnectToSQL.connection.createStatement();
             statement.executeUpdate(deleteInfo);
 
         } catch (SQLException e) {

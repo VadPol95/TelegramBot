@@ -13,14 +13,11 @@ import java.util.stream.Collectors;
  Класс который содениняет ТелеграмБот с Базой Данных.
 */
 public class ProductCaloriesMethod {
-    private static ConnectToSQL mainJava;
     private static Product products;
-    public static String result;
     // Создает объект класса Products
     public static void products() {
         products = new Product();
     }
-    static List<String> productes = new ArrayList<>();
     /**
      * Метод который создает подключение к базе данных,
      * после того как пользователь напишет свой продукт проверяет базу данных на наличе этого продукта
@@ -35,7 +32,7 @@ public class ProductCaloriesMethod {
             String sqlWorker = ("select * from d1cfnt21boubau.products.products where \"Products_Name\" ilike " + "\'%" + message + "%\'");
 
             // Создаем подключение к базе данных
-            Statement statement = mainJava.connection.createStatement();
+            Statement statement = ConnectToSQL.connection.createStatement();
 
             // Выполняем команду Select для SQL
             ResultSet resultSet = statement.executeQuery(sqlWorker);

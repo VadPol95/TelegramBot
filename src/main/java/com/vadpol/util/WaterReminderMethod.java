@@ -15,7 +15,6 @@ import java.sql.Statement;
 
 
 public class WaterReminderMethod implements Job {
-    private static ConnectToSQL mainJava;
     TelegramBotTest telegramBot = new TelegramBotTest();
 
 
@@ -30,7 +29,7 @@ public class WaterReminderMethod implements Job {
         // Создаем подключение к базе данных
 
         try {
-            Statement statement = mainJava.connection.createStatement();
+            Statement statement = ConnectToSQL.connection.createStatement();
 
 
             // Выполняем команду Select для SQL
@@ -41,7 +40,7 @@ public class WaterReminderMethod implements Job {
             /* Отправляет в чат сообщение о том что нужно выпить воду
              */
             while (resultSet.next()) {
-               String result = resultSet.getString(1);
+                String result = resultSet.getString(1);
 
                 SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(result);
@@ -56,6 +55,7 @@ public class WaterReminderMethod implements Job {
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        } ConnectToSQL.closeConnection();
+        }
+        ConnectToSQL.closeConnection();
     }
 }

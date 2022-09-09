@@ -7,14 +7,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class IndividualDataDAO {
-    private static ConnectToSQL mainJava;
-
-    public IndividualDataDAO(ConnectToSQL mainJava) {
-        IndividualDataDAO.mainJava = mainJava;
-    }
-
-    public IndividualDataDAO() {
-    }
 
     // Расчет индивидуальных калорий взятых из базы данных
     public static String individualCaloriesCalculation(String chatId) {
@@ -37,11 +29,11 @@ public class IndividualDataDAO {
             String sex = ("select information from d1cfnt21boubau.products.\"individualCalories\" where \"chatId\"=" + chatId + " and number=5");
             String activity = ("select information from d1cfnt21boubau.products.\"individualCalories\" where \"chatId\"=" + chatId + " and number=6");
             // Создаем подключение к базе данных
-            Statement statementHeight = mainJava.connection.createStatement();
-            Statement statementWeight = mainJava.connection.createStatement();
-            Statement statementAge = mainJava.connection.createStatement();
-            Statement statementSex = mainJava.connection.createStatement();
-            Statement statementActivity = mainJava.connection.createStatement();
+            Statement statementHeight = ConnectToSQL.connection.createStatement();
+            Statement statementWeight = ConnectToSQL.connection.createStatement();
+            Statement statementAge = ConnectToSQL.connection.createStatement();
+            Statement statementSex = ConnectToSQL.connection.createStatement();
+            Statement statementActivity = ConnectToSQL.connection.createStatement();
 
             // Выполняем команду Select для SQL
             ResultSet resultSetHeight = statementHeight.executeQuery(height);
@@ -93,7 +85,7 @@ public class IndividualDataDAO {
         try {
 
             String deleteInfo = ("delete from d1cfnt21boubau.products.\"individualCalories\" where \"chatId\"=" + chatId);
-            Statement statement = mainJava.connection.createStatement();
+            Statement statement = ConnectToSQL.connection.createStatement();
             statement.executeUpdate(deleteInfo);
 
 
@@ -108,7 +100,7 @@ public class IndividualDataDAO {
             boolean result = false;
             String numbers = ("select number from d1cfnt21boubau.products.\"individualCalories\" where \"chatId\"=" + chatId);
 
-            Statement statement = mainJava.connection.createStatement();
+            Statement statement = ConnectToSQL.connection.createStatement();
             ResultSet resultSetHeight = statement.executeQuery(numbers);
             while (resultSetHeight.next()) {
                 if (resultSetHeight.getString(1).equals(number)) {
@@ -132,7 +124,7 @@ public class IndividualDataDAO {
 
 
             // Создаем подключение к базе данных
-            Statement statement = mainJava.connection.createStatement();
+            Statement statement = ConnectToSQL.connection.createStatement();
 
             // Выполняем команду Select для SQL
             int resultSet = statement.executeUpdate(sqlWorker);
@@ -150,7 +142,7 @@ public class IndividualDataDAO {
 
 
             // Создаем подключение к базе данных
-            Statement statement = mainJava.connection.createStatement();
+            Statement statement = ConnectToSQL.connection.createStatement();
 
             // Выполняем команду Select для SQL
             int resultSet = statement.executeUpdate(sqlWorker);
@@ -165,7 +157,7 @@ public class IndividualDataDAO {
         try {
 
             String deleteInfo = ("delete from d1cfnt21boubau.products.\"waterReminder\" where \"ChatId\"=" + chatId);
-            Statement statement = mainJava.connection.createStatement();
+            Statement statement = ConnectToSQL.connection.createStatement();
             statement.executeUpdate(deleteInfo);
 
         } catch (SQLException e) {
@@ -181,7 +173,7 @@ public class IndividualDataDAO {
 
 
             // Создаем подключение к базе данных
-            Statement statement = mainJava.connection.createStatement();
+            Statement statement = ConnectToSQL.connection.createStatement();
 
             // Выполняем команду Select для SQL
             int resultSet = statement.executeUpdate(sqlWorker);
