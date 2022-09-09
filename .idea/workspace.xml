@@ -6,16 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d4d60272-42fa-4ccc-b4c6-118f34f35798" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/Methods/InsertIndividualDataSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/Methods/InsertIndividualDataSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/Methods/InsertUserDataToSQLWaterReminder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/Methods/InsertUserDataToSQLWaterReminder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/Methods/InsertWaterBalanceSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/Methods/InsertWaterBalanceSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/Methods/ProductCaloriesMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/Methods/ProductCaloriesMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/Methods/ProductsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/Methods/SpecialOfTheDayMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/recipe/SpecialOfTheDayRecipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/Methods/WaterReminderMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/Methods/WaterReminderMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/TelegramBot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/RunTelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/TelegramBot/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/telegramBot/TelegramBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/ConnectionSQL/ConnectToSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/connectionToSql/ConnectToSQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/RunTelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/RunTelegramBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/telegramBot/TelegramBot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/util/ProductCaloriesMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/util/ProductCaloriesMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/util/WaterReminderMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/util/WaterReminderMethod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,12 +64,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="RunTelegramBot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.vadpol.RunTelegramBot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.vadpol.RunTelegramBot" />
       <module name="TelegramBot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.vadpol.*" />
+          <option name="PATTERN" value="com.vadpol.telegramBot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,6 +77,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.vadpol.RunTelegramBot" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -93,6 +93,7 @@
       <updated>1660319636468</updated>
       <workItem from="1662487085798" duration="1705000" />
       <workItem from="1662628485874" duration="10480000" />
+      <workItem from="1662715732923" duration="361000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1662488103068</created>
@@ -101,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662488103068</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1662715838530</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662715838530</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

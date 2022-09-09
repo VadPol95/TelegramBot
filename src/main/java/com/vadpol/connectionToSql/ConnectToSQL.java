@@ -1,4 +1,4 @@
-package com.vadpol.ConnectionSQL;
+package com.vadpol.connectionToSql;
 
 import java.net.URI;
 import java.net.URISyntaxException;

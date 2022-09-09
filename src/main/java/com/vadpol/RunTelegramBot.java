@@ -4,6 +4,7 @@ package com.vadpol;
 // Класс Main, этот класс активирует телеграмБот, этот же класс запускается в Heroku.
 
 
+import com.vadpol.telegramBot.TelegramBotTest;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
