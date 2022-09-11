@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d60272-42fa-4ccc-b4c6-118f34f35798" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/RunTelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/RunTelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/connectionToSql/ConnectToSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/connection/ConnectToSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/dao/IndividualDataDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/dao/IndividualDataDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/dao/WaterDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/dao/WaterDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/service/impl/DatabaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/service/impl/DatabaseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/service/impl/WaterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/service/impl/WaterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/telegramBot/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/telegramBot/TelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/util/CalculateProductCalories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/util/CalculateProductCalories.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/util/WaterReminder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/util/WaterReminder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/java/com/vadpol/dao/IndividualDataDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/java/com/vadpol/dao/IndividualDataDAOTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +100,7 @@
       <workItem from="1662487085798" duration="1705000" />
       <workItem from="1662628485874" duration="10480000" />
       <workItem from="1662715732923" duration="6528000" />
-      <workItem from="1662893642299" duration="4634000" />
+      <workItem from="1662893642299" duration="5506000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1662488103068</created>
@@ -162,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662719184551</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update">
+      <created>1662898538399</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662898538399</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

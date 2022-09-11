@@ -37,7 +37,6 @@ public class RunTelegramBot {
 //            scheduler.scheduleJob(jobDetail, trigger);
 
 
-
         } catch (TelegramApiRequestException e) {
             e.printStackTrace();
         }

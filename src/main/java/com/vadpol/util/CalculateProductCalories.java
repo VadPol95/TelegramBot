@@ -9,15 +9,18 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+
 /*
  Класс который содениняет ТелеграмБот с Базой Данных.
 */
 public class CalculateProductCalories {
     private static Product products;
+
     // Создает объект класса Products
     public static void products() {
         products = new Product();
     }
+
     /**
      * Метод который создает подключение к базе данных,
      * после того как пользователь напишет свой продукт проверяет базу данных на наличе этого продукта
