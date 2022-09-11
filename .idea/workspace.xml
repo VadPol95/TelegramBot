@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d60272-42fa-4ccc-b4c6-118f34f35798" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vadpol/util/CalculateProductCalories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vadpol/util/CalculateProductCalories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/java/com/vadpol/dao/IndividualDataDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/java/com/vadpol/dao/IndividualDataDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/java/com/vadpol/dao/WaterDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/java/com/vadpol/dao/WaterDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/java/com/vadpol/recipe/SpecialOfTheDayRecipeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/java/com/vadpol/recipe/SpecialOfTheDayRecipeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/java/com/vadpol/util/CalculateProductCaloriesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/java/com/vadpol/util/CalculateProductCaloriesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,23 +76,93 @@
       <recent name="com.vadpol" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="RunTelegramBot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.vadpol.RunTelegramBot" />
+  <component name="RunManager" selected="JUnit.CalculateProductCaloriesTest.process">
+    <configuration name="CalculateProductCaloriesTest.process" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TelegramBot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.vadpol.telegramBot.*" />
+          <option name="PATTERN" value="com.vadpol.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.vadpol.util" />
+      <option name="MAIN_CLASS_NAME" value="com.vadpol.util.CalculateProductCaloriesTest" />
+      <option name="METHOD_NAME" value="process" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpecialOfTheDayRecipeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TelegramBot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vadpol.recipe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vadpol.recipe" />
+      <option name="MAIN_CLASS_NAME" value="com.vadpol.recipe.SpecialOfTheDayRecipeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpecialOfTheDayRecipeTest.processBreakFast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TelegramBot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vadpol.recipe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vadpol.recipe" />
+      <option name="MAIN_CLASS_NAME" value="com.vadpol.recipe.SpecialOfTheDayRecipeTest" />
+      <option name="METHOD_NAME" value="processBreakFast" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaterDAOTest.checkWaterBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TelegramBot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vadpol.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vadpol.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.vadpol.dao.WaterDAOTest" />
+      <option name="METHOD_NAME" value="checkWaterBalance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaterDAOTest.individualWaterBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TelegramBot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vadpol.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vadpol.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.vadpol.dao.WaterDAOTest" />
+      <option name="METHOD_NAME" value="individualWaterBalance" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RunTelegramBot" />
+        <item itemvalue="JUnit.CalculateProductCaloriesTest.process" />
+        <item itemvalue="JUnit.SpecialOfTheDayRecipeTest" />
+        <item itemvalue="JUnit.SpecialOfTheDayRecipeTest.processBreakFast" />
+        <item itemvalue="JUnit.WaterDAOTest.individualWaterBalance" />
+        <item itemvalue="JUnit.WaterDAOTest.checkWaterBalance" />
       </list>
     </recent_temporary>
   </component>
@@ -100,7 +177,7 @@
       <workItem from="1662487085798" duration="1705000" />
       <workItem from="1662628485874" duration="10480000" />
       <workItem from="1662715732923" duration="6528000" />
-      <workItem from="1662893642299" duration="5506000" />
+      <workItem from="1662893642299" duration="15666000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1662488103068</created>
@@ -158,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662898538399</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update">
+      <created>1662899304817</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662899304817</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

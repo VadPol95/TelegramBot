@@ -1,10 +1,13 @@
 package com.vadpol.dao;
 
+import com.vadpol.connection.ConnectToSQL;
+import com.vadpol.service.impl.WaterServiceImpl;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class WaterDAOTest {
+    private final WaterServiceImpl waterService = new WaterServiceImpl();
 
     @Test
     void individualWaterBalance() {
@@ -12,9 +15,21 @@ class WaterDAOTest {
 
     @Test
     void checkWaterBalance() {
+        ConnectToSQL.mainJava();
+
+        String chatId = "5";
+        String number = "5";
+
+        waterService.checkWaterBalance(chatId,number);
     }
 
     @Test
     void deleteIndividualWaterBalance() {
+        ConnectToSQL.mainJava();
+
+        String chatId = "5";
+
+        waterService.deleteIndividualWaterBalance(chatId);
+
     }
 }
