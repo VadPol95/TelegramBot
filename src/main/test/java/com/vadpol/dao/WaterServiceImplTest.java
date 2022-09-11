@@ -18,7 +18,7 @@ class WaterServiceImplTest {
         String chatId = "5";
         String number = "5";
 
-        waterService.checkWaterBalance(chatId,number);
+        waterService.checkWaterBalance(chatId, number);
     }
 
     @Test

@@ -27,7 +27,7 @@ class DatabaseServiceImplTest {
         String chatId = "5";
         String number = "200";
 
-        databaseService.checkIndividualCaloriesCalculation(chatId,number);
+        databaseService.checkIndividualCaloriesCalculation(chatId, number);
     }
 
     @Test
