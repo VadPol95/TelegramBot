@@ -1,13 +1,16 @@
 package com.vadpol.dao;
 
+import com.vadpol.model.Product;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class IndividualDataDAOTest {
+    private IndividualDataDAO dataDAO;
 
     @Test
     void individualCaloriesCalculation() {
+
     }
 
     @Test
@@ -20,6 +23,7 @@ class IndividualDataDAOTest {
 
     @Test
     void insertIndividualDataToSql() {
+
     }
 
     @Test
@@ -32,5 +36,6 @@ class IndividualDataDAOTest {
 
     @Test
     void insertWaterBalanceToSql() {
+
     }
 }

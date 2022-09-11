@@ -1,6 +1,6 @@
 package com.vadpol.dao;
 
-import com.vadpol.connectionToSql.ConnectToSQL;
+import com.vadpol.connection.ConnectToSQL;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,7 +9,7 @@ import java.sql.Statement;
 public class IndividualDataDAO {
 
     // Расчет индивидуальных калорий взятых из базы данных
-    public static String individualCaloriesCalculation(String chatId) {
+    public String individualCaloriesCalculation(String chatId) {
 
         double womanHeight = 3.1;
         double manHeight = 4.8;
@@ -87,7 +87,7 @@ public class IndividualDataDAO {
     }
 
     // Удаляет из базы данных информацию о пользователе
-    public static void deleteIndividualCaloriesCalculation(String chatId) {
+    public void deleteIndividualCaloriesCalculation(String chatId) {
         try {
 
             String deleteInfo = ("delete from d1cfnt21boubau.products.\"individualCalories\" where \"chatId\"=" + chatId);
@@ -101,7 +101,7 @@ public class IndividualDataDAO {
     }
 
     //Проверяет наличие пунктов в базе данных для следующего шага в цикле
-    public static boolean checkIndividualCaloriesCalculation(String chatId, String number) {
+    public boolean checkIndividualCaloriesCalculation(String chatId, String number) {
         try {
             boolean result = false;
             String numbers = ("select number from d1cfnt21boubau.products.\"individualCalories\" where \"chatId\"=" + chatId);
@@ -122,7 +122,7 @@ public class IndividualDataDAO {
         }
     }
 
-    public static void insertIndividualDataToSql(String chatId, String number, String value) {
+    public void insertIndividualDataToSql(String chatId, String number, String value) {
 
         try {
 
@@ -141,7 +141,7 @@ public class IndividualDataDAO {
         }
     }
 
-    public static void insertChatIdInWaterReminderSQL(String chatId) {
+    public void insertChatIdInWaterReminderSQL(String chatId) {
 
         try {
 
@@ -161,7 +161,7 @@ public class IndividualDataDAO {
     }
 
     // Удаляет из базы данных информацию о пользователе
-    public static void deleteChatIdInWaterReminderSQL(String chatId) {
+    public void deleteChatIdInWaterReminderSQL(String chatId) {
         try {
 
             String deleteInfo = ("delete from d1cfnt21boubau.products.\"waterReminder\" where \"ChatId\"=" + chatId);
@@ -173,7 +173,7 @@ public class IndividualDataDAO {
         }
     }
 
-    public static void insertWaterBalanceToSql(String chatId, String number, String value) {
+    public void insertWaterBalanceToSql(String chatId, String number, String value) {
 
         try {
 

@@ -4,24 +4,21 @@ import com.vadpol.dao.WaterDAO;
 import com.vadpol.service.WaterService;
 
 public class WaterServiceImpl implements WaterService {
-//    private static final WaterDAO waterDAO = new WaterDAO();
+    private final WaterDAO waterDAO = new WaterDAO();
 
-//    public WaterServiceImpl(WaterDAO waterDAO) {
-//        this.waterDAO = waterDAO;
-//    }
 
     @Override
     public String individualWaterBalance(String chatId) {
-        return WaterDAO.individualWaterBalance(chatId);
+        return waterDAO.individualWaterBalance(chatId);
     }
 
     @Override
     public boolean checkWaterBalance(String chatId, String number) {
-        return WaterDAO.checkWaterBalance(chatId, number);
+        return waterDAO.checkWaterBalance(chatId, number);
     }
 
     @Override
     public void deleteIndividualWaterBalance(String chatId) {
-        WaterDAO.deleteIndividualWaterBalance(chatId);
+        waterDAO.deleteIndividualWaterBalance(chatId);
     }
 }

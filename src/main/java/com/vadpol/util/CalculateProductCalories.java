@@ -1,6 +1,6 @@
 package com.vadpol.util;
 
-import com.vadpol.connectionToSql.ConnectToSQL;
+import com.vadpol.connection.ConnectToSQL;
 import com.vadpol.model.Product;
 
 import java.sql.ResultSet;

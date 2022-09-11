@@ -1,6 +1,6 @@
 package com.vadpol.dao;
 
-import com.vadpol.connectionToSql.ConnectToSQL;
+import com.vadpol.connection.ConnectToSQL;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,7 +9,7 @@ import java.sql.Statement;
 public class WaterDAO {
 
     // Расчет индивидуальных калорий взятых из базы данных
-    public static String individualWaterBalance(String chatId) {
+    public String individualWaterBalance(String chatId) {
 
         double weightConstant = 30;
         double result = 1;
@@ -42,7 +42,7 @@ public class WaterDAO {
     }
 
     //Проверяет наличие пунктов в базе данных для следующего шага в цикле
-    public static boolean checkWaterBalance(String chatId, String number) {
+    public boolean checkWaterBalance(String chatId, String number) {
         try {
             boolean result = false;
             String numbers = ("select weight from d1cfnt21boubau.products.\"waterBalance\" where \"chatId\"=" + chatId);
@@ -64,7 +64,7 @@ public class WaterDAO {
     }
 
     // Удаляет из базы данных информацию о пользователе
-    public static void deleteIndividualWaterBalance(String chatId) {
+    public void deleteIndividualWaterBalance(String chatId) {
         try {
 
             String deleteInfo = ("delete from d1cfnt21boubau.products.\"waterBalance\" where \"chatId\"=" + chatId);

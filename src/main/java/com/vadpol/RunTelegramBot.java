@@ -10,8 +10,6 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
-import static org.quartz.JobBuilder.newJob;
-
 public class RunTelegramBot {
 
 

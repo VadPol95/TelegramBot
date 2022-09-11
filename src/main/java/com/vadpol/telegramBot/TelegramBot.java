@@ -1,9 +1,9 @@
 package com.vadpol.telegramBot;
 
-import com.vadpol.connectionToSql.ConnectToSQL;
-import com.vadpol.dao.IndividualDataDAO;
-import com.vadpol.dao.WaterDAO;
+import com.vadpol.connection.ConnectToSQL;
 import com.vadpol.recipe.SpecialOfTheDayRecipe;
+import com.vadpol.service.impl.DatabaseServiceImpl;
+import com.vadpol.service.impl.WaterServiceImpl;
 import com.vadpol.util.CalculateProductCalories;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.ParseMode;
@@ -26,12 +26,6 @@ import java.util.regex.Pattern;
 // Класс ТелеграмБота, методы для получение и отправки сообщений.
 public class TelegramBot extends TelegramLongPollingBot {
 
-    private IndividualDataDAO databaseService;
-    private WaterDAO waterService;
-//    private DatabaseServiceImpl databaseService;
-//    private WaterServiceImpl waterService;
-
-
     public TelegramBot() {
         ConnectToSQL.mainJava();
         CalculateProductCalories.products();
@@ -42,6 +36,8 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     // метод обработки получения и отправки сообщений в телеграмм
     public void onUpdateReceived(Update update) {
+        DatabaseServiceImpl databaseService = new DatabaseServiceImpl();
+        WaterServiceImpl waterService = new WaterServiceImpl();
 
         Message message = update.getMessage();
         ConnectToSQL.mainJava();

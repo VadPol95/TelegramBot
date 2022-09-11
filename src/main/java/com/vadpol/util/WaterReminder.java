@@ -1,7 +1,7 @@
 package com.vadpol.util;
 
 
-import com.vadpol.connectionToSql.ConnectToSQL;
+import com.vadpol.connection.ConnectToSQL;
 import com.vadpol.telegramBot.TelegramBot;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
