@@ -4,9 +4,7 @@ import com.vadpol.connection.ConnectToSQL;
 import com.vadpol.service.impl.DatabaseServiceImpl;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class IndividualDataDAOTest {
+class DatabaseServiceImplTest {
 
     private final DatabaseServiceImpl databaseService = new DatabaseServiceImpl();
 

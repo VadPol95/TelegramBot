@@ -4,9 +4,7 @@ import com.vadpol.connection.ConnectToSQL;
 import com.vadpol.service.impl.WaterServiceImpl;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class WaterDAOTest {
+class WaterServiceImplTest {
     private final WaterServiceImpl waterService = new WaterServiceImpl();
 
     @Test
