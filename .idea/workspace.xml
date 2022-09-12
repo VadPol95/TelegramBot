@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d60272-42fa-4ccc-b4c6-118f34f35798" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/942450a6-9766-4f9c-80c1-533772001633.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/942450a6-9766-4f9c-80c1-533772001633/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/942450a6-9766-4f9c-80c1-533772001633/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/942450a6-9766-4f9c-80c1-533772001633/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/942450a6-9766-4f9c-80c1-533772001633/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -111,17 +106,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpecialOfTheDayRecipeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DatabaseServiceImplTest.individualCaloriesCalculation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TelegramBot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.vadpol.recipe.*" />
+          <option name="PATTERN" value="com.vadpol.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.vadpol.recipe" />
-      <option name="MAIN_CLASS_NAME" value="com.vadpol.recipe.SpecialOfTheDayRecipeTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.vadpol.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.vadpol.dao.DatabaseServiceImplTest" />
+      <option name="METHOD_NAME" value="individualCaloriesCalculation" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,10 +155,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DatabaseServiceImplTest" />
+        <item itemvalue="JUnit.DatabaseServiceImplTest.individualCaloriesCalculation" />
         <item itemvalue="JUnit.WaterServiceImplTest" />
         <item itemvalue="JUnit.WaterServiceTest" />
         <item itemvalue="JUnit.CalculateProductCaloriesTest.process" />
-        <item itemvalue="JUnit.SpecialOfTheDayRecipeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +174,7 @@
       <workItem from="1662628485874" duration="10480000" />
       <workItem from="1662715732923" duration="6528000" />
       <workItem from="1662893642299" duration="16711000" />
-      <workItem from="1662989617165" duration="2077000" />
+      <workItem from="1662989617165" duration="3950000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1662488103068</created>
@@ -264,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662921084954</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update">
+      <created>1662992916177</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662992916177</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
