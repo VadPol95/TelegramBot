@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d60272-42fa-4ccc-b4c6-118f34f35798" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/942450a6-9766-4f9c-80c1-533772001633.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/942450a6-9766-4f9c-80c1-533772001633/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/942450a6-9766-4f9c-80c1-533772001633/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/942450a6-9766-4f9c-80c1-533772001633/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/942450a6-9766-4f9c-80c1-533772001633/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/java/com/vadpol/dao/IndividualDataDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/java/com/vadpol/dao/DatabaseServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/java/com/vadpol/dao/WaterDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/java/com/vadpol/dao/WaterServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/java/com/vadpol/recipe/SpecialOfTheDayRecipeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/java/com/vadpol/recipe/SpecialOfTheDayRecipeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,23 +39,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/admin/Desktop/TelegramBot/src/main&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;4020eeaf94be83118604024c43312267&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/Users/admin/Desktop/TelegramBot/src/main",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "4020eeaf94be83118604024c43312267"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main" />
@@ -170,7 +177,8 @@
       <workItem from="1662487085798" duration="1705000" />
       <workItem from="1662628485874" duration="10480000" />
       <workItem from="1662715732923" duration="6528000" />
-      <workItem from="1662893642299" duration="16401000" />
+      <workItem from="1662893642299" duration="16711000" />
+      <workItem from="1662989617165" duration="2077000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1662488103068</created>
@@ -242,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662920337551</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update">
+      <created>1662920934188</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662920934188</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update">
+      <created>1662921084954</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662921084954</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
