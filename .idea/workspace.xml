@@ -7,6 +7,10 @@
     <list default="true" id="d4d60272-42fa-4ccc-b4c6-118f34f35798" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/java/com/vadpol/dao/DatabaseServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vadpol/dao/DatabaseServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/java/com/vadpol/dao/WaterServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vadpol/dao/WaterServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/java/com/vadpol/recipe/SpecialOfTheDayRecipeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vadpol/recipe/SpecialOfTheDayRecipeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/java/com/vadpol/util/CalculateProductCaloriesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/vadpol/util/CalculateProductCaloriesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,19 +78,11 @@
       <recent name="com.vadpol" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DatabaseServiceImplTest">
-    <configuration name="CalculateProductCaloriesTest.process" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in TelegramBot">
+    <configuration name="All in TelegramBot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TelegramBot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.vadpol.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.vadpol.util" />
-      <option name="MAIN_CLASS_NAME" value="com.vadpol.util.CalculateProductCaloriesTest" />
-      <option name="METHOD_NAME" value="process" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -154,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in TelegramBot" />
         <item itemvalue="JUnit.DatabaseServiceImplTest" />
         <item itemvalue="JUnit.DatabaseServiceImplTest.individualCaloriesCalculation" />
         <item itemvalue="JUnit.WaterServiceImplTest" />
         <item itemvalue="JUnit.WaterServiceTest" />
-        <item itemvalue="JUnit.CalculateProductCaloriesTest.process" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +170,7 @@
       <workItem from="1662628485874" duration="10480000" />
       <workItem from="1662715732923" duration="6528000" />
       <workItem from="1662893642299" duration="16711000" />
-      <workItem from="1662989617165" duration="4786000" />
+      <workItem from="1662989617165" duration="6791000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1662488103068</created>
@@ -274,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662997943703</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update">
+      <created>1662998777718</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1662998777718</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
